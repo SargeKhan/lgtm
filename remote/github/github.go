@@ -30,8 +30,8 @@ type Github struct {
 func (g *Github) GetUser(res http.ResponseWriter, req *http.Request) (*model.User, error) {
 
 	var config = &oauth2.Config{
-		ClientID:     g.Client,
-		ClientSecret: g.Secret,
+		ClientID:     "1945ecef626171fdb614",
+		ClientSecret: "d693e5218bfccf119085c6175f5ccc27f8cd4685",
 		RedirectURL:  fmt.Sprintf("%s/login", httputil.GetURL(req)),
 		Endpoint: oauth2.Endpoint{
 			AuthURL:  fmt.Sprintf("%s/login/oauth/authorize", g.URL),
